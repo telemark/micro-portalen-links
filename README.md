@@ -3,6 +3,8 @@
 
 # micro-portalen-links
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/micro-portalen-links.svg)](https://greenkeeper.io/)
+
 Microservice for portalen links
 
 
