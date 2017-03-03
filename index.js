@@ -18,7 +18,9 @@ module.exports = async (request, response) => {
     response.setHeader('Access-Control-Allow-Methods', 'GET, POST')
   }
 
-  if (pathname === '/links') {
+  if (request.method === 'OPTIONS') {
+    response.end()
+  } else if (pathname === '/links') {
     send(response, 200, results)
   } else if (pathname === '/view') {
     send(response, 200, renderPage(results))
