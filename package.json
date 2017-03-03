@@ -1,7 +1,7 @@
 {
   "name": "micro-portalen-links",
   "description": "Mapping of links",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=7.7.1"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -26,6 +26,7 @@
   "keywords": [
     "microservice",
     "micro",
+    "portalen",
     "links",
     "Telemark fylkeskommune"
   ],
@@ -38,7 +39,8 @@
   },
   "now": {
     "alias": [
-      "links.portalen.t-fk.win"
+      "links.portalen.t-fk.win",
+      "links.portalen.micro.t-fk.no"
     ],
     "env": {
       "NODE_ENV": "production"
@@ -57,7 +59,7 @@
   "dependencies": {
     "is-file": "1.0.0",
     "marked": "0.3.6",
-    "micro": "7.0.4",
+    "micro": "7.0.6",
     "tfk-unique-array": "1.0.11"
   }
 }
