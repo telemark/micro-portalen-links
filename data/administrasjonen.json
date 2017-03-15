@@ -68,6 +68,13 @@
     "system": "CraftCMS",
     "url": "https://info.portalen.t-fk.no/landing?id=kontaktinformasjon",
     "icon": "contacts"
+  },
+          {
+    "title": "Påmeldingssystem",
+    "description": "Påmelding",
+    "system": "Pindena",
+    "url": "https://telemark.pameldingssystem.no/",
+    "icon": "subscriptions"
   }
 ]    
   
