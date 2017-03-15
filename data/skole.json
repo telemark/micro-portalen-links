@@ -17,42 +17,42 @@
     "title": "Styringsinformasjon",
     "description": "Styringsinformasjon for Telemark fylkeskommune",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/artikler/2016/styringsinformasjon",
+    "url": "https://info.portalen.t-fk.no/artikler/2016/styringsinformasjon",
     "icon": "flag"
   },
         {
     "title": "Velferd",
     "description": "Velferdstjenester for de som jobber i administrasjonen i Telemark fylkeskommune",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/landing?id=velferd",
+    "url": "https://info.portalen.t-fk.no/landing?id=velferd",
     "icon": "directions_run"
   },
         {
     "title": "IT",
     "description": "IT-tjenester for de som jobber i administrasjonen i Telemark fylkeskommune",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/landing?id=IT",
+    "url": "https://info.portalen.t-fk.no/landing?id=IT",
     "icon": "computer"
   },
       {
     "title": "Kommunikasjon",
     "description": "Kommunikasjon",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/landing?id=kommunikasjon",
+    "url": "https://info.portalen.t-fk.no/landing?id=kommunikasjon",
     "icon": "chat_bubble"
   },
       {
     "title": "Ofte stilte spørsmål",
     "description": "Ofte stilte spørsmål",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/landing?id=oftestilte",
+    "url": "https://info.portalen.t-fk.no/landing?id=oftestilte",
     "icon": "question_answer"
   },
       {
     "title": "Kontaktinformasjon",
     "description": "Kontaktinformasjon",
     "system": "CraftCMS",
-    "url": "http://dev.telemarkportalen.vpdev.no/landing?id=kontaktinformasjon",
+    "url": "https://info.portalen.t-fk.no/landing?id=kontaktinformasjon",
     "icon": "contacts"
   }
 ]
