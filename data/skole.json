@@ -3,17 +3,10 @@
     "title": "Arbeidsrom",
     "description": "Område for samarbeid og dokumentdeling",
     "system": "Sharepoint",
-    "url": "https://rom.t-fk.no/Arbeidsrom/Sider/default.aspx",
+    "url": "https://skoletfk.sharepoint.com/sites/arbrom/Arbeidsrom/Sider/default.aspx",
     "icon": "work"
   },
   {
-    "title": "Prosjektveiviseren",
-    "description": "Rom for prosjektstyring",
-    "system": "Sharepoint",
-    "url": "https://rom.t-fk.no/sites/Prosjektveiviseren/SitePages/Portefolje.aspx",
-    "icon": "folder"
-  },
-    {
     "title": "Styringsinformasjon",
     "description": "Styringsinformasjon for Telemark fylkeskommune",
     "system": "CraftCMS",
