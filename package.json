@@ -1,7 +1,7 @@
 {
   "name": "micro-portalen-links",
   "description": "Mapping of links",
-  "version": "1.3.7",
+  "version": "1.4.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.1.3"
+    "node": ">=8.8.1"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -20,8 +20,9 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
+    "dev": "micro-dev",
     "start": "micro",
-    "now-deploy": "npm test && now --npm && now alias"
+    "deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
     "microservice",
@@ -32,12 +33,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-portalen-links.git"
+    "url": "git+https://github.com/telemark/micro-portalen-links.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/micro-portalen-links/issues"
   },
-  "homepage": "https://github.com/telemark/micro-portalen-links",
+  "homepage": "https://github.com/telemark/micro-portalen-links#readme",
   "now": {
     "alias": [
       "links.portalen.win"
@@ -51,6 +52,7 @@
     "ava": "0.19.1",
     "axios": "0.17.0",
     "coveralls": "3.0.0",
+    "micro-dev": "1.3.0",
     "nsp": "2.8.1",
     "nyc": "11.1.0",
     "standard": "10.0.3",
@@ -58,7 +60,7 @@
   },
   "dependencies": {
     "is-file": "1.0.0",
-    "marked": "0.3.6",
+    "markdown-it": "8.4.0",
     "micro": "9.0.0",
     "tfk-unique-array": "1.0.11"
   }
