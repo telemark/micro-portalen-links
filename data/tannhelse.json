@@ -61,5 +61,12 @@
     "system": "Pindena",
     "url": "https://telemark.pameldingssystem.no/",
     "icon": "subscriptions"
+  },
+  {
+    "title": "Regionreformen",
+    "description": "regionreform",
+    "system": "infoportalen",
+    "url": "https://info.portalen.t-fk.no/landing?id=regionreform",
+    "icon": "satellite"
   }
 ]

@@ -65,8 +65,8 @@
   {
     "title": "Regionreformen",
     "description": "regionreform",
-    "system": "Pindena",
+    "system": "infoportalen",
     "url": "https://info.portalen.t-fk.no/landing?id=regionreform",
-    "icon": "subscriptions"
+    "icon": "satellite"
   }
 ]
