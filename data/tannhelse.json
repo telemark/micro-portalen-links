@@ -68,5 +68,12 @@
     "system": "infoportalen",
     "url": "https://info.portalen.t-fk.no/landing?id=regionreform",
     "icon": "satellite"
+  },
+  {
+    "title": "Presentasjoner",
+    "description": "Presentasjoner fra samlinger",
+    "system": "infoportalen",
+    "url": "https://info.portalen.t-fk.no/landing?id=presentasjoner",
+    "icon": "present_to_all"
   }
 ]
