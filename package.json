@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.9.3"
+    "node": ">=10.1.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -22,7 +22,8 @@
     "standard-fix": "standard --fix",
     "dev": "micro-dev",
     "start": "micro",
-    "deploy": "npm test && now --npm && now alias"
+    "deploy": "npm test && now --npm && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
