@@ -53,7 +53,7 @@
     }
   },
   "devDependencies": {
-    "ava": "0.24.0",
+    "ava": "0.25.0",
     "axios": "0.18.0",
     "coveralls": "3.0.1",
     "nsp": "3.2.1",
