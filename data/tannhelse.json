@@ -23,36 +23,36 @@
   {
     "title": "Velferd",
     "description": "Velferdstjenester for de som jobber i administrasjonen i Telemark fylkeskommune",
-    "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/landing?id=velferd",
+    "system": "Wordpress",
+    "url": "https://portaleninfo.com/velferd/",
     "icon": "directions_run"
   },
         {
     "title": "IT",
     "description": "IT-tjenester for de som jobber i administrasjonen i Telemark fylkeskommune",
-    "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/landing?id=IT",
+    "system": "Wordpress",
+    "url": "https://portaleninfo.com/it/",
     "icon": "computer"
   },
       {
     "title": "Kommunikasjon",
     "description": "Kommunikasjon",
-    "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/landing?id=kommunikasjon",
+    "system": "Wordpress",
+    "url": "https://portaleninfo.com/kommunikasjon/",
     "icon": "chat_bubble"
   },
       {
     "title": "Ofte stilte spørsmål",
     "description": "Ofte stilte spørsmål",
-    "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/landing?id=oftestilte",
+    "system": "Wordpress",
+    "url": "https://portaleninfo.com/ofte-stilte-sporsmal/",
     "icon": "question_answer"
   },
       {
     "title": "Kontaktinformasjon",
     "description": "Kontaktinformasjon",
-    "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/landing?id=kontaktinformasjon",
+    "system": "Wordpress",
+    "url": "https://portaleninfo.com/kontaktinformasjon/",
     "icon": "contacts"
   },
         {
