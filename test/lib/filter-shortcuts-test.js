@@ -8,13 +8,13 @@ const tannhelse = require('../../data/tannhelse.json')
 const tullefant = []
 
 test('Links generated correct', t => {
-  t.deepEqual(administrasjonen, buildMyLinks({roles: 'administrasjonen'}), 'It returns administrasjonen correct')
+  t.deepEqual(administrasjonen, buildMyLinks({ roles: 'administrasjonen' }), 'It returns administrasjonen correct')
 
-  t.deepEqual(skole, buildMyLinks({roles: 'skole'}), 'It returns skole correct')
+  t.deepEqual(skole, buildMyLinks({ roles: 'skole' }), 'It returns skole correct')
 
-  t.deepEqual(tannhelse, buildMyLinks({roles: ['tannhelse']}), 'It returns tannhelse correct')
+  t.deepEqual(tannhelse, buildMyLinks({ roles: ['tannhelse'] }), 'It returns tannhelse correct')
 
-  t.deepEqual(tullefant, buildMyLinks({roles: ['tullefant']}), 'It returns tullefant correct')
+  t.deepEqual(tullefant, buildMyLinks({ roles: ['tullefant'] }), 'It returns tullefant correct')
 
   t.deepEqual([], buildMyLinks(), 'It returns empty correct')
 })
