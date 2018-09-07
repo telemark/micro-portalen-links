@@ -56,6 +56,22 @@ To filter by roles
 }
 ```
 
+To filter by ip
+
+#### GET
+
+```bash
+?myIp=127.0.0.1
+```
+
+#### POST
+
+```JavaScript
+{
+  myIp: '127.0.0.1'
+}
+```
+
 ## License
 
 [MIT](LICENSE)
