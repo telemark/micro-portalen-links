@@ -1,0 +1,13 @@
+{
+  "name": "micro-portalen-links",
+  "alias": [
+    "links.portalen.win"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  }
+}
