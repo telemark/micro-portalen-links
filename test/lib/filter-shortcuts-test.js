@@ -2,9 +2,9 @@
 
 const test = require('ava')
 const buildMyLinks = require('../../lib/filter-links')
-const administrasjonen = require('../../data/administrasjonen.json')
-const skole = require('../../data/skole.json')
-const tannhelse = require('../../data/tannhelse.json')
+const administrasjonen = require('../../lib/data/administrasjonen.json')
+const skole = require('../../lib/data/skole.json')
+const tannhelse = require('../../lib/data/tannhelse.json')
 const tullefant = []
 
 test('Links generated correct', t => {
