@@ -1,12 +1,10 @@
-const { readFileSync } = require('fs')
-const md = require('markdown-it')()
-const { send } = require('micro')
 const listAllLinks = require('./lib/list-all-links')
 const filterLinks = require('./lib/filter-links')
 const renderPage = require('./lib/render-page')
 
 module.exports = async (request, response) => {
-  const { url: pathname } = request
+  const { url } = request
+  const pathname = url.split('?').shift()
   const data = request.method === 'POST' ? await request.body : await request.query
   const results = Object.values(data).length > 0 ? filterLinks(data) : listAllLinks()
 
@@ -18,11 +16,11 @@ module.exports = async (request, response) => {
   if (request.method === 'OPTIONS') {
     response.end()
   } else if (pathname === '/links') {
-    send(response, 200, results)
+    response.json(results)
   } else if (pathname === '/view') {
-    send(response, 200, renderPage(results))
+    response.send(renderPage(results))
   } else {
-    const readme = readFileSync(`${__dirname}/README.md`, 'utf-8')
-    send(response, 200, md.render(readme))
+    response.status(404)
+    response.send('not found')
   }
 }
