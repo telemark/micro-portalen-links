@@ -10,9 +10,6 @@
     "url": "https://github.com/zrrrzzt"
   },
   "main": "index.js",
-  "engines": {
-    "node": ">=10.15.0"
-  },
   "scripts": {
     "test": "standard && npm audit && ava",
     "test-offline": "standard && ava",
@@ -53,5 +50,8 @@
     "micro": "9.3.4",
     "tfk-unique-array": "2.0.0",
     "wildcard": "2.0.0"
+  },
+  "engines": {
+    "node": ">=10.17.0"
   }
 }
