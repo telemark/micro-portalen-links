@@ -1,14 +1,13 @@
 const { readFileSync } = require('fs')
 const md = require('markdown-it')()
-const { parse } = require('url')
-const { json, send } = require('micro')
+const { send } = require('micro')
 const listAllLinks = require('./lib/list-all-links')
 const filterLinks = require('./lib/filter-links')
 const renderPage = require('./lib/render-page')
 
 module.exports = async (request, response) => {
-  const { pathname, query } = await parse(request.url, true)
-  const data = request.method === 'POST' ? await json(request) : query
+  const { url: pathname } = request
+  const data = request.method === 'POST' ? await request.body : await request.query
   const results = Object.values(data).length > 0 ? filterLinks(data) : listAllLinks()
 
   if (!['/', '/view'].includes(pathname)) {
