@@ -17,8 +17,13 @@
     "title": "Styringsinformasjon",
     "description": "Styringsinformasjon for Telemark fylkeskommune",
     "system": "CraftCMS",
-    "url": "https://info.portalen.t-fk.no/artikler/2016/styringsinformasjon",
-    "icon": "flag"
+    "url": "https://portaleninfo.com/styringsinformasjon/",
+    "icon": "flag",
+    "includeIps": [
+      "139.164.160.*",
+      "139.164.182.*",
+      "213.188.19.179"
+    ]
   },
   {
     "title": "Velferd",
