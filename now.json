@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "micro-portalen-links",
+  "scope": "kommunikasjon",
   "alias": [
     "links.portalen.win"
   ],
@@ -8,9 +9,23 @@
     "NODE_ENV": "production"
   },
   "builds": [
-    { "src": "/index.js", "use": "@now/node" }
+    {
+      "src": "/*.md",
+      "use": "@now/md"
+    },
+    { 
+      "src": "/index.js", 
+      "use": "@now/node" 
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+    {
+      "src": "/",
+      "dest": "/README.html"
+    },
+    { 
+      "src": "/(.*)", 
+      "dest": "/index.js" 
+    }
   ]
 }
