@@ -3,8 +3,9 @@
 
 # micro-portalen-links
 
-Microservice for portalen links
+Microservice for portalen links.
 
+Returns an array of links based on roles and ip.
 
 ## API
 
@@ -57,7 +58,7 @@ To filter by roles
 ```
 
 ```
-curl http://localhost:3000/links -d '{"roles": ["skole"]}' --header "Content-Type: application/json"
+$ curl http://localhost:3000/links -d '{"roles": ["skole"]}' --header "Content-Type: application/json"
 ```
 
 To filter by ip
@@ -75,6 +76,50 @@ To filter by ip
   myIp: '127.0.0.1'
 }
 ```
+
+## Development
+
+## Development
+
+You'll need the [now-cli](https://zeit.co/now) installed to do local development.
+
+- Clone the repo
+- Install the dependencies ```$ npm i```
+- Start the development server ```$ npm run dev```
+
+### Add a new link
+
+- Open the .json-file for the role you will add the link for [lib/data/](lib/data/)
+- Add the link
+
+```JavaScript
+  {
+      "title": "The links title",
+      "description": "Links description (keep it short)",
+      "system": "What system is the link leading to",
+      "url": "Url for the link",
+      "icon": "Name for the link icon", // From https://material.io/resources/icons/?style=baseline
+      "includeIps": [
+        "10.0.*.*", // Support wildcards for range
+        "172.16.0.0" // Supports full address
+      ] //This optional. Must be an array. If the shortcut is available for all IPs remove the property
+    }
+```
+
+- Redeploy
+
+### Remove a link
+
+- Remove the link from the role file [lib/data/](lib/data/)
+- Redeploy
+
+## Deploy
+
+Make sure the [now.json](now.json) matches your environment.
+
+Run the deploy script.
+
+```$ npm run deploy```
 
 ## License
 
