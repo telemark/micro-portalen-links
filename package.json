@@ -38,7 +38,7 @@
     "ava": "3.13.0",
     "coveralls": "3.1.0",
     "nyc": "15.1.0",
-    "standard": "14.3.4"
+    "standard": "15.0.1"
   },
   "dependencies": {
     "is-file": "1.0.0",
